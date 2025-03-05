@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #000000;
+    --transition: all .4s ease-in-out;
+    font-family: "Unica One", serif;
+    --animate-duration: 5s;
+    
+}
+
+
+body, html {
+    overflow: hidden;
+    background-size: cover;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.imagem-fundo {
+    background-size: 20%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+header {
+    position: fixed;
+    width: 85%;
+    top: 0;
+    right: 0;
+    z-index: 1090;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    background-color: transparent;
+    transition: var(--transition)
+}
+
+.logo img{
+    width: 160px;
+    height: auto;
+    max-width: 100%;
+}
+
+.navbar {
+    display: flex;
+    animation: fadeInDown var(--animate-duration) ease-in-out forwards;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 30px;
+    transition: var(--transition);
+}
+
+.Lancamentos:hover {
+    box-shadow: 0px 5px 1px -3px rgb(0, 0, 0);
+}
+.Ofertas:hover {
+    box-shadow: 0px 5px 0px -3px rgb(0, 0, 0);
+}
+.Masculino:hover {
+    box-shadow: 0px 5px 0px -3px rgb(0, 0, 0);
+}
+.Feminino:hover {
+    box-shadow: 0px 5px 0px -3px rgb(0, 0, 0);
+}
+
+
+header-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons i{
+    margin-left: 10px;
+    font-size: 22px;
+    color: var(--text-color);
+    margin-right: 15px;
+    transition: var(--transition);
+    animation: fadeInRight var(--animate-duration) ease-in-out forwards;
+}
+
+.header-icons i:hover{
+    color: rgb(192, 192, 192);
+}
+
+
+#menu-icon {
+    font-size: 34px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.shoes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin-left: -50px; 
+    margin-top: -130px;
+}
+
+.shoes img  {
+    width: 600px;
+    height: 600px;
+    margin-top: 190px;
+    animation: fadeIn var(--animate-duration) ease-in-out forwards;
+}
+
+
+/* Estilos para o tamanho */
+.size-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 300px;
+    animation: fadeInLeft var(--animate-duration) ease-in-out forwards;
+}
+
+.size-container {
+    width: 100%;
+}
+
+.size-title {
+    position: absolute;
+    top: -30px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.size-list {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.size {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid rgb(192, 192, 192);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.size-list :hover{
+    color: white;
+}
+
+
+.size:hover{
+    background-color: rgb(29, 29, 29);
+
+}
+
+
+
+/* Estilos para a cor */
+.color-wrapper {
+    position: absolute;
+    top: 350px;
+    left: 40px;
+    width: 300px;
+    animation: fadeInLeft var(--animate-duration) ease-in-out forwards;
+}
+
+.color-container {
+    width: 100%;
+}
+
+.color-title {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+.color-list {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+}
+
+.color-list div {
+    width: 80px; 
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.color-list div:hover {
+    filter: var(--transition);
+    border: 1px solid #000;
+}
+
+.color-list img {
+    width: 110%;
+    height: auto;
+}
+ 
+
+.sobre-wrapper {
+    position: absolute;
+    bottom: 300px;
+    right: 50px; 
+    width: 320px;
+    animation: fadeInRight var(--animate-duration) ease-in-out forwards;
+    
+    
+}
+
+.sobre-container {
+    width: 100%;
+    
+}
+
+.categoria{
+    font-size: 12px;
+}
+
+.sobre-titulo h1 {
+    margin: 12px;
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.sobre-tenis h2 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    
+}
+
+.preco-wrapper {
+    position: absolute;
+    bottom: 220px;
+    right: 50px; 
+    width: 320px;
+    animation: fadeInRight var(--animate-duration) ease-in-out forwards;
+    
+}
+
+.preco-container {
+    width: 100%;
+}
+
+.preco-titulo h1 {
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.texto-riscado {
+    text-decoration: line-through;
+}
+
+.texto-color{
+    color: green;
+    font-size: 15px;
+}
+
+.cartao-desconto{
+    font-size: 14px;
+}
+
+.texto-color-desconto{
+    color: green;
+    font-size: 13px;
+}
+
+.carrinho-wrapper {
+    position: absolute;
+    bottom: 140px;
+    right: 50px; 
+    width: 320px;
+    
+}
+
+.carrinho-container {
+    width: 100%;
+    
+}
+
+.carrinho{
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: #131212;
+    color: white;
+
+    transition: 0.3s;
+    animation: fadeInRight var(--animate-duration) ease-in-out forwards;
+}
+
+.carrinho h1 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    animation: fadeInRight var(--animate-duration) ease-in-out forwards;
+}
+
+.carrinho:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+.carrinho h1:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
